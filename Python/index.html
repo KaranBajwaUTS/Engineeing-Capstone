@@ -1,0 +1,51 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<style>
+body {
+  font-family: "Roboto", sans-serif;
+}
+</style>
+</head>
+<center>
+<h1>Capstone Project</h1>
+<h5>Karan @ Univserity of Technology Sydney</h5>
+<form action="generate" method="get">
+<label for="loads">Loads (kWh):</label>
+<input type="input" id="loads" name="loads" value="10, 16, 11, 10, 12, 20, 50, 60, 25, 20, 25, 28, 20, 5, 8, 22, 35, 50, 70, 85, 60, 30, 20, 10" size=100>
+<br>
+<label for="costs">Costs ($/kWh):</label>
+<input type="input" id="costs" name="costs" value="0.2, 0.2, 0.15, 0.15, 0.15, 0.2, 0.4, 0.4, 0.3, 0.3, 0.3, 0.3, 0.3, 0.2, 0.2, 0.3, 0.3, 0.4, 0.4, 0.4, 0.4, 0.3, 0.3, 0.2" size=100>
+<br>
+<label for="res">RES (kWh):</label>
+<input type="input" id="res" name="res" value="0, 0, 0, 0, 0, 0, 1, 8, 25, 50, 65, 77, 75, 70, 60, 46, 35, 20, 10, 4, 0, 0, 0, 0" size=100>
+<br>
+<br>
+<label for="tariff_rate">Tariff rate ($/kWh):</label>
+<input type="number" id="tariff_rate" name="tariff_rate" min="0" max="1" step=".01" maxlength="2" size="2" value="0.1" style="width: 4em">
+<br>
+<br>
+<label for="battery_size">Battery size (kW):</label>
+<input type="number" id="battery_size" name="battery_size" min="0" max="1000" step="10" maxlength="2" size="2" value="100" style="width: 4em">
+<br>
+<label for="battery_initial_soc">Battery initial SOC:</label>
+<input type="number" id="battery_initial_soc" name="battery_initial_soc" min="0" max="1" step="0.1" maxlength="2" size="2" value="0.5" style="width: 4em">
+<br>
+<label for="battery_minimum_soc">Battery minimum SOC:</label>
+<input type="number" id="battery_minimum_soc" name="battery_minimum_soc" min="0" max="1" step="0.1" maxlength="2" size="2" value="0.1" style="width: 4em">
+<br>
+<label for="battery_maximum_soc">Battery maximum SOC:</label>
+<input type="number" id="battery_maximum_soc" name="battery_maximum_soc" min="0" max="1" step="0.1" maxlength="2" size="2" value="0.9" style="width: 4em">
+<br>
+<label for="battery_max_power_flow">Battery max power flow (kWh):</label>
+<input type="number" id="battery_max_power_flow" name="battery_max_power_flow" min="0" max="1000" step="0.1" maxlength="2" size="2" value="50" style="width: 4em">
+<br>
+<br>
+<label for="random_initial_solution">Random initial solution?</label>
+<input type="checkbox" id="random_initial_solution" name="random_initial_solution">
+<br>
+<br>
+<input type="submit" value="Generate" style="font-size: 28px">
+</form>
+</center>
+</html>
